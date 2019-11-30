@@ -1,7 +1,3 @@
-##################
-# CUSTOM CHANGES #
-##################
-
 ######## EZ PROMPT STUFF ############
 
 # get current branch in git repo
