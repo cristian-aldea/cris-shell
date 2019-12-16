@@ -1,5 +1,2 @@
-########### <CUSTOM-SHELL-CHANGES> ###########
-if [ -f ~/.custom.sh ]; then
-    . ~/.custom.sh
-fi
-########### </CUSTOM-SHELL-CHANGES> ###########
+########### CUSTOM SH CHANGES ###########
+[ -r ~/.custom.sh ] && . ~/.custom.sh

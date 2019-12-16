@@ -54,8 +54,5 @@ export PS1="\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[34m
 
 export PROMPT_COMMAND='echo -en "\033]0;$(whoami)@$(hostname):$(dirs +0)\a"'
 
-########### <CUSTOM-SHELL-CHANGES> ###########
-if [ -f ~/.custom.sh ]; then
-    . ~/.custom.sh
-fi
-########### </CUSTOM-SHELL-CHANGES> ###########
+########### CUSTOM SH CHANGES ###########
+[ -r ~/.custom.sh ] && . ~/.custom.sh

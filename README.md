@@ -24,7 +24,7 @@ You might get warning that the checkout would override existing files. In that c
 
 2. Paste the following into your file:
 ```bash
-########### CUSTOM CHANGES ###########
+########### CUSTOM BASH CHANGES ###########
 [ -r ~/.custom.bashrc ] && . ~/.custom.bashrc
 ```
 3. Enjoy!
@@ -35,7 +35,7 @@ You might get warning that the checkout would override existing files. In that c
     * Default: `~/.zshrc`
 2. Paste the following into your bash profile:
 ```bash
-########### CUSTOM CHANGES ###########
+########### CUSTOM ZSH CHANGES ###########
 [ -r ~/.custom.zshrc ] && . ~/.custom.zshrc
 ```
 3. Enjoy!

@@ -11,6 +11,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias fucking="sudo"
+alias bash="bash --login"
 
 # Git Aliases
 git config --global alias.sync '!git pull; git push'
