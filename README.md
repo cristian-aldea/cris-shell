@@ -18,16 +18,14 @@ You might get warning that the checkout would override existing files. In that c
 
 ### bash
 
-1. Locate your bash profile file:
-    * Linux: `~/.bashrc`
-    * MacOS: `~/.bash_profile`
-2. Paste the following into your bash profile:
+1. Locate your bash profile:
+    * Linux/MacOS: `~/.bash_profile`
+    * Alternatively, you can use your bashrc file: `~/.bashrc`
+
+2. Paste the following into your file:
 ```bash
-########### <CUSTOM-CHANGES> ###########
-if [ -f ~/.custom.bashrc ]; then
-    . ~/.custom.bashrc
-fi
-########### </CUSTOM-CHANGES> ###########
+########### CUSTOM CHANGES ###########
+[ -r ~/.custom.bashrc ] && . ~/.custom.bashrc
 ```
 3. Enjoy!
 
@@ -37,10 +35,7 @@ fi
     * Default: `~/.zshrc`
 2. Paste the following into your bash profile:
 ```bash
-########### <CUSTOM-CHANGES> ###########
-if [ -f ~/.custom.zshrc ]; then
-    . ~/.custom.zshrc
-fi
-########### </CUSTOM-CHANGES> ###########
+########### CUSTOM CHANGES ###########
+[ -r ~/.custom.zshrc ] && . ~/.custom.zshrc
 ```
 3. Enjoy!
