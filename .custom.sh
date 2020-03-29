@@ -18,6 +18,9 @@ alias pip="pip3"
 # Git Config
 git config --global pager.branch false
 git config --global core.editor 'vim'
-git config --global alias.sync '!git pull; git push'
+
+git config --global alias.sync '!git pull --rebase --prune; git push'
 git config --global alias.co checkout
 git config --global alias.unstage 'reset HEAD --'
+git config --global alias.addcommit '!git add -A && git commit'
+git config --global alias.undocommit 'reset --soft HEAD~1'
