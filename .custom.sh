@@ -24,3 +24,5 @@ git config --global alias.co checkout
 git config --global alias.unstage 'reset HEAD --'
 git config --global alias.addcommit '!git add -A && git commit'
 git config --global alias.undocommit 'reset --soft HEAD~1'
+git config --global alias.nuke '!git reset --hard && git clean -df'
+git config --global alias.fpush 'push --force-with-lease'
