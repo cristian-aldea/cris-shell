@@ -5,7 +5,6 @@ alias my-config='/usr/bin/git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
 
 
 # Aliases
-
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -14,6 +13,10 @@ alias fucking="sudo"
 alias bash="bash --login"
 alias python="python3"
 alias pip="pip3"
+
+# Mac Java Home switch Aliases
+# alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11` && java -version"
+# alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8` && java -version"
 
 # Git Config
 git config --global pager.branch false
