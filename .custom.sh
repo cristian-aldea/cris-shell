@@ -20,6 +20,7 @@ alias pip="pip3"
 # Git Config
 git config --global pager.branch false
 git config --global core.editor 'vim'
+git config --global credential.helper store
 
 # Git aliases
 git config --global alias.sync '!git pull --rebase --prune; git push'
