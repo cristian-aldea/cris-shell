@@ -12,6 +12,7 @@ alias fucking="sudo"
 alias bash="bash --login"
 alias python="python3"
 alias pip="pip3"
+alias k=kubectl
 
 # Mac Java Home switch Aliases
 # alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11` && java -version"
@@ -20,7 +21,6 @@ alias pip="pip3"
 # Git Config
 git config --global pager.branch false
 git config --global core.editor 'vim'
-git config --global credential.helper store
 
 # Git aliases
 git config --global alias.sync '!git pull --rebase --prune; git push'
