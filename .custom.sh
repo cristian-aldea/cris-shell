@@ -24,11 +24,16 @@ git config --global pager.branch false
 git config --global core.editor 'vim'
 
 # Git aliases
-git config --global alias.sync '!git pull --rebase --prune; git push'
-git config --global alias.co checkout
+git config --global alias.sync '!git pull --rebase --prune && git push'
 git config --global alias.unstage 'reset HEAD --'
+git config --global alias.nuke '!git reset --hard && git clean -df'
+git config --global alias.current-branch 'rev-parse --abbrev-ref HEAD'
+git config --global alias.publish '!git push -u origin $(git current-branch)'
+
+git config --global alias.co checkout
+git config --global alias.s status
 git config --global alias.ac '!git add -A && git commit'
+git config --global alias.cp '!git commit && git push'
 git config --global alias.acp '!git add -A && git commit && git push'
 git config --global alias.uc 'reset --soft HEAD~1'
-git config --global alias.nuke '!git reset --hard && git clean -df'
 git config --global alias.fp 'push --force-with-lease'
