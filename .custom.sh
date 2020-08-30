@@ -19,9 +19,8 @@ alias mkdir='mkdir -p'
 # alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11` && java -version"
 # alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8` && java -version"
 
-# Git Config
+############# GIT CONFIG ###############
 git config --global pager.branch false
-git config --global core.editor 'vim'
 
 # Git aliases
 git config --global alias.sync '!git pull --rebase --prune && git push'
@@ -37,3 +36,7 @@ git config --global alias.cp '!git commit && git push'
 git config --global alias.acp '!git add -A && git commit && git push'
 git config --global alias.uc 'reset --soft HEAD~1'
 git config --global alias.fp 'push --force-with-lease'
+
+############# ENVIRONMENT VARIABLES ###############
+
+export EDITOR="vim"
