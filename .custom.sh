@@ -23,14 +23,18 @@ alias mkdir='mkdir -p'
 git config --global pager.branch false
 
 # Git aliases
-git config --global alias.sync '!git pull --rebase --prune && git push'
 git config --global alias.unstage 'reset HEAD --'
-git config --global alias.nuke '!git reset --hard && git clean -df'
 git config --global alias.current-branch 'rev-parse --abbrev-ref HEAD'
 git config --global alias.publish '!git push -u origin $(git current-branch)'
 
 git config --global alias.co checkout
 git config --global alias.s status
+
+git config --global alias.rlb 'branch -m'
+git config --global alias.rrb '!f() { git push origin --delete "$1" && git push origin -u "$2"; }; f'
+git config --global alias.rb '!f() { git rlb "$2" && git rrb "$1" "$2"; }; f'
+git config --global alias.nuke '!git reset --hard && git clean -df'
+git config --global alias.sync '!git pull --rebase --prune && git push'
 git config --global alias.ac '!git add -A && git commit'
 git config --global alias.cp '!git commit && git push'
 git config --global alias.acp '!git add -A && git commit && git push'
