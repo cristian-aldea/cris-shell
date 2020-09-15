@@ -1,4 +1,8 @@
-######## EZ PROMPT STUFF ############
+############################################
+### Custom configuration for bash shells ###
+############################################
+
+########### EZ PROMPT STUFF ###########
 
 # get current branch in git repo
 function parse_git_branch() {
