@@ -12,7 +12,7 @@ Based on the following guide: <https://www.atlassian.com/git/tutorials/dotfiles>
 
 2. Set the following alias in your terminal session
 
-   - `alias my-config='/usr/bin/git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'`
+   - `alias lconfig='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'`
 
 3. Checkout the content from the repository to your home directory
 
