@@ -2,11 +2,11 @@
 ### Custom configuration for all shells ###
 ###########################################
 
-############# CUSTOM ALIASES ###############
+############### ALIASES ###############
 
-# my-config
-alias my-config='/usr/bin/git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
-
+# lconfig
+# see https://github.com/cristian-aldea/bash-me
+alias lconfig='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
 
 # Aliases
 alias ll='ls -alF'
@@ -19,7 +19,7 @@ alias pip="pip3"
 alias k=kubectl
 alias mkdir='mkdir -p'
 
-############# GIT CONFIG ###############
+############### GIT CONFIG ###############
 git config --global pager.branch false
 
 # Git aliases
@@ -41,6 +41,6 @@ git config --global alias.acp '!git add -A && git commit && git push'
 git config --global alias.uc 'reset --soft HEAD~1'
 git config --global alias.fp 'push --force-with-lease'
 
-############# ENVIRONMENT VARIABLES ###############
+############### ENVIRONMENT VARIABLES ###############
 
 export EDITOR="vim"
