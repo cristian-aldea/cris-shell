@@ -16,12 +16,12 @@ Based on the following guide: <https://www.atlassian.com/git/tutorials/dotfiles>
 
 3. Checkout the content from the repository to your home directory
 
-   - `my-config checkout`
-   - You might get warning that the checkout would override existing files. In that case simply back them up or delete them.
+   - `lconfig checkout`
+   - You might get warning that the checkout would override existing files. In that case simply back them up, delete them, or use the `--force` option.
 
 4. Hide untracked files
 
-   - `my-config config --local status.showUntrackedFiles no`
+   - `lconfig config --local status.showUntrackedFiles no`
 
 ## Use
 
