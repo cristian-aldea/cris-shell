@@ -8,7 +8,7 @@ Based on the following guide: <https://www.atlassian.com/git/tutorials/dotfiles>
 
 1. Clone into a bare repository
 
-   - `git clone --bare https://github.com/TheGreatMarkus/bash-me.git ~/.myconfig`
+   - `git clone --bare https://github.com/cristian-aldea/bash-me.git ~/.myconfig`
 
 2. Set the following alias in your terminal session
 
