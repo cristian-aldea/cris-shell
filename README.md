@@ -12,16 +12,16 @@ Based on the following guide: <https://www.atlassian.com/git/tutorials/dotfiles>
 
 2. Set the following alias in your terminal session
 
-   - `alias lconfig='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'`
+   - `alias myconfig='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'`
 
 3. Checkout the content from the repository to your home directory
 
-   - `lconfig checkout`
+   - `myconfig checkout`
    - You might get warning that the checkout would override existing files. In that case simply back them up, delete them, or use the `--force` option.
 
 4. Hide untracked files
 
-   - `lconfig config --local status.showUntrackedFiles no`
+   - `myconfig config --local status.showUntrackedFiles no`
 
 ## Use
 
