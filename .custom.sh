@@ -6,7 +6,7 @@
 
 # lconfig
 # see https://github.com/cristian-aldea/bash-me
-alias lconfig='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
+alias myconfig='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
 
 # Aliases
 alias ll='ls -alF'
