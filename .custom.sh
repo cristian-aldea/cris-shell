@@ -12,7 +12,7 @@ alias myconfig='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias fucking="sudo"
+alias please="sudo"
 alias bash="bash --login"
 alias python="python3"
 alias pip="pip3"
