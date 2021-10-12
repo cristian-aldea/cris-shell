@@ -40,6 +40,7 @@ git config --global alias.cp '!git commit && git push'
 git config --global alias.acp '!git add -A && git commit && git push'
 git config --global alias.uc 'reset --soft HEAD~1'
 git config --global alias.fp 'push --force-with-lease'
+git config --global alias.prune-branches '!git branch  | grep -v \* | xargs git branch -D'
 
 ############### ENVIRONMENT VARIABLES ###############
 
