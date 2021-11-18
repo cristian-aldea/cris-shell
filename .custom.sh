@@ -22,6 +22,7 @@ alias mkdir='mkdir -p'
 ############### GIT CONFIG ###############
 # Uncomment to setup, just needs to run once on a system
 # git config --global pager.branch false
+# git config --global pull.rebase true
 
 # git config --global alias.unstage 'reset HEAD --'
 # git config --global alias.current-branch 'rev-parse --abbrev-ref HEAD'
