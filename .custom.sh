@@ -19,6 +19,7 @@ alias pip="pip3"
 alias k=kubectl
 alias mkdir='mkdir -p'
 alias untar='tar -xvzf'
+alias watch='watch -n 1 '
 
 ############### GIT CONFIG ###############
 # Uncomment to setup, just needs to run once on a system
