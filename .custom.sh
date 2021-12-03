@@ -22,7 +22,6 @@ alias untar='tar -xvzf'
 alias watch='watch -n 1 '
 
 ############### GIT CONFIG ###############
-# Uncomment to setup, just needs to run once on a system
 git config --global pager.branch false
 git config --global pull.rebase true
 git config --global init.defaultBranch main
