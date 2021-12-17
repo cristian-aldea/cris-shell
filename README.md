@@ -35,7 +35,7 @@ Based on the following guide: <https://www.atlassian.com/git/tutorials/dotfiles>
 
    ```bash
    ########### CUSTOM BASH CONFIG ###########
-   [ -r ~/.custom.bashrc ] && . ~/.custom.bashrc
+   [ -r ~/.custom.bash ] && . ~/.custom.bash
    ```
 
 3. Enjoy!
@@ -48,7 +48,7 @@ Based on the following guide: <https://www.atlassian.com/git/tutorials/dotfiles>
 
    ```zsh
    ########### CUSTOM ZSH CONFIG ###########
-   [ -r ~/.custom.zshrc ] && . ~/.custom.zshrc
+   [ -r ~/.custom.zsh ] && . ~/.custom.zsh
    ```
 
 3. Enjoy!
