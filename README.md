@@ -34,7 +34,6 @@ EOF
 
 
 # setup bash
-
 cat <<EOF >> ~/.bashrc
 
 ########### CUSTOM BASH CONFIG ###########
