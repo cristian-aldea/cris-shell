@@ -6,49 +6,39 @@ Based on the following guide: <https://www.atlassian.com/git/tutorials/dotfiles>
 
 ## Installation
 
-1. Clone into a bare repository
+```
+# Clone into a bare repository
+git clone --bare https://github.com/cristian-aldea/bash-me.git ~/.myconfig
 
-   - `git clone --bare https://github.com/cristian-aldea/bash-me.git ~/.myconfig`
+# Set the following alias in your terminal session for convenience
+alias myconfig='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
 
-2. Set the following alias in your terminal session
+# Checkout the content from the repository to your home directory
+# You might get a warning that the checkout would override existing files
+# In that case back up the files, delete them, or use the "--force" option
+myconfig checkout
 
-   - `alias myconfig='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'`
+# Hide untracked files
+myconfig config --local status.showUntrackedFiles no
+```
+## Using the configuration in your terminal
 
-3. Checkout the content from the repository to your home directory
+```bash
 
-   - `myconfig checkout`
-   - You might get warning that the checkout would override existing files. In that case simply back them up, delete them, or use the `--force` option.
+# setup zsh
+cat <<EOF >> ~/.zshrc
 
-4. Hide untracked files
+########### CUSTOM ZSH CONFIG ###########
+[ -r ~/.custom.zsh ] && . ~/.custom.zsh
+EOF
 
-   - `myconfig config --local status.showUntrackedFiles no`
 
-## Use
+# setup bash
 
-### bash
+cat <<EOF >> ~/.bashrc
 
-1. Locate your bashrc file:
+########### CUSTOM BASH CONFIG ###########
+[ -r ~/.custom.bash ] && . ~/.custom.bash
+EOF
 
-   - Linux/MacOS: `~/.bashrc`
-
-2. Paste the following into your bashrc file:
-
-   ```bash
-   ########### CUSTOM BASH CONFIG ###########
-   [ -r ~/.custom.bash ] && . ~/.custom.bash
-   ```
-
-3. Enjoy!
-
-### zsh
-
-1. Locate your zshrc file:
-   - Linux/MacOS: `~/.zshrc`
-2. Paste the following into your zshrc file:
-
-   ```zsh
-   ########### CUSTOM ZSH CONFIG ###########
-   [ -r ~/.custom.zsh ] && . ~/.custom.zsh
-   ```
-
-3. Enjoy!
+```
