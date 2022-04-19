@@ -1,4 +1,4 @@
-# bash-me
+# cris-shell
 
 Repository for storing my configuration files and easily porting then between devices.
 
@@ -6,20 +6,20 @@ Based on the following guide: <https://www.atlassian.com/git/tutorials/dotfiles>
 
 ## Installation
 
-```
+```bash
 # Clone into a bare repository
-git clone --bare https://github.com/cristian-aldea/bash-me.git ~/.myconfig
+git clone --bare https://github.com/cristian-aldea/cris-shell.git ~/.cris-shell
 
 # Set the following alias in your terminal session for convenience
-alias myconfig='git --git-dir=$HOME/.myconfig/ --work-tree=$HOME'
+alias crissh='git --git-dir=$HOME/.cris-shell/ --work-tree=$HOME'
 
 # Checkout the content from the repository to your home directory
 # You might get a warning that the checkout would override existing files
 # In that case back up the files, delete them, or use the "--force" option
-myconfig checkout
+crissh checkout
 
 # Hide untracked files
-myconfig config --local status.showUntrackedFiles no
+crissh config --local status.showUntrackedFiles no
 ```
 ## Using the configuration in your terminal
 
