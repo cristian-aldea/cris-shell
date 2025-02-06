@@ -39,8 +39,7 @@ git config --global alias.ac '!git add -A && git commit'
 git config --global alias.aa '!git add -A && git commit --amend'
 git config --global alias.uc 'reset --soft HEAD~1'
 git config --global alias.fp 'push --force-with-lease'
-git config --global alias.prune-branches '!git branch  | grep -v \* | xargs git branch -D'
-git config --global alias.cleanup-repo '!git nuke && git pull --prune && git prune-branches'
+git config --global alias.prune-branches '!git pull --prune && git branch  | grep -v \* | xargs git branch -D'
 
 ############### ENVIRONMENT VARIABLES ###############
 
