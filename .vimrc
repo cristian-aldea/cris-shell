@@ -11,3 +11,6 @@ set shiftwidth=2
 
 nnoremap <S-j> :m .+1<CR>==
 nnoremap <S-k> :m .-2<CR>==
+
+set backspace=indent,eol,start
+
