@@ -8,9 +8,8 @@
 alias crissh='git --git-dir=$HOME/.cris-shell/ --work-tree=$HOME'
 
 # Aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -lh'
+alias la='ls -lAh'
 alias please="sudo"
 alias bash="bash --login"
 # alias python="python3"
